@@ -1,0 +1,1 @@
+Use data request summary (see PDF) to download Compustat data via WRDS. Name output-file "COMPUSTAT.dta" an place into this folder. 
