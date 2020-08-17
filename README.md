@@ -3,7 +3,7 @@ Online Repository for the Research Article "Tax Knowledge Diffusion via Strategi
 
 Version: 08/19/2020
 
-Highlights
+Highlights:
 - Strategic alliances serve as channels for tax knowledge diffusion between firms 
 - Low-tax networks cause increases in tax planning behavior of high-tax firms
 - Effects do not materialize before two years after a network's initiation
