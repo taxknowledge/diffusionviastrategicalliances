@@ -1,0 +1,4 @@
+EX-21 Dataset
+You can download 10-K Exhibit 21 data at https://sites.google.com/site/scottdyreng/Home/data-and-code/EX21-Dataset
+Credits: Scott D. Dyreng
+(last accessed 08/18/2020)

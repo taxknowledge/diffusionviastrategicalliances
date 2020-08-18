@@ -1,0 +1,4 @@
+TEXTUAL SENTIMENT (10-K)
+You can download data on textual sentiment in 10-K filings at https://sraf.nd.edu/textual-analysis/resources/
+Credits: Bill McDonald
+(last accessed 07/31/2020)

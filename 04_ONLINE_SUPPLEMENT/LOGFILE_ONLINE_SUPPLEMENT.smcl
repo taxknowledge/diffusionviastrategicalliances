@@ -1,0 +1,239 @@
+{smcl}
+{txt}{sf}{ul off}{com}.         *Table OS 1
+.         reghdfe CASH_ETR3 i.hightolow $PARTNERlist $FIRMlist $NETWORKlist, absorb(IND YEAR) vce(cluster CUSIPNUM)   
+{res}{txt}({browse "http://scorreia.com/research/hdfe.pdf":MWFE estimator} converged in 6 iterations)
+{res}
+{txt}HDFE Linear regression{col 51}Number of obs{col 67}= {res}       828
+{txt}Absorbing 2 HDFE groups{col 51}F({res}  23{txt},{res}    401{txt}){col 67}= {res}      1.96
+{txt}Statistics robust to heteroskedasticity{col 51}Prob > F{col 67}= {res}    0.0056
+{txt}{col 51}R-squared{col 67}= {res}    0.1792
+{txt}{col 51}Adj R-squared{col 67}= {res}    0.1230
+{txt}{col 51}Within R-sq.{col 67}= {res}    0.1465
+{txt}{col 1}Number of clusters ({res}CUSIPNUM{txt}) {col 30}= {res}       402{txt}{col 51}Root MSE{col 67}= {res}    0.1801
+
+{txt}{ralign 87:(Std. Err. adjusted for {res:402} clusters in CUSIPNUM)}
+{hline 22}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 23}{c |}{col 35}    Robust
+{col 1}            CASH_ETR3{col 23}{c |}      Coef.{col 35}   Std. Err.{col 47}      t{col 55}   P>|t|{col 63}     [95% Con{col 76}f. Interval]
+{hline 22}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 10}1.hightolow {c |}{col 23}{res}{space 2}-.0273273{col 35}{space 2} .0137149{col 46}{space 1}   -1.99{col 55}{space 3}0.047{col 63}{space 4}-.0542895{col 76}{space 3}-.0003652
+{txt}{space 4}1.PARTSAMEAUDITOR {c |}{col 23}{res}{space 2}-.0048735{col 35}{space 2} .0151065{col 46}{space 1}   -0.32{col 55}{space 3}0.747{col 63}{space 4}-.0345712{col 76}{space 3} .0248243
+{txt}{space 12}PROXIMITY {c |}{col 23}{res}{space 2}-.0538158{col 35}{space 2} .0465047{col 46}{space 1}   -1.16{col 55}{space 3}0.248{col 63}{space 4}-.1452393{col 76}{space 3} .0376077
+{txt}{space 11}ebitda_at3 {c |}{col 23}{res}{space 2}-.6401389{col 35}{space 2} .1883683{col 46}{space 1}   -3.40{col 55}{space 3}0.001{col 63}{space 4}-1.010452{col 76}{space 3}-.2698261
+{txt}{space 14}RnDExp3 {c |}{col 23}{res}{space 2}  .126767{col 35}{space 2} .1836022{col 46}{space 1}    0.69{col 55}{space 3}0.490{col 63}{space 4}-.2341761{col 76}{space 3}   .48771
+{txt}{space 15}AdExp3 {c |}{col 23}{res}{space 2} .1970391{col 35}{space 2} .3472363{col 46}{space 1}    0.57{col 55}{space 3}0.571{col 63}{space 4}-.4855919{col 76}{space 3} .8796701
+{txt}{space 17}SGA3 {c |}{col 23}{res}{space 2}-.0157887{col 35}{space 2} .0666552{col 46}{space 1}   -0.24{col 55}{space 3}0.813{col 63}{space 4}-.1468259{col 76}{space 3} .1152486
+{txt}{space 15}CapEx3 {c |}{col 23}{res}{space 2} .0754007{col 35}{space 2} .1778509{col 46}{space 1}    0.42{col 55}{space 3}0.672{col 63}{space 4} -.274236{col 76}{space 3} .4250375
+{txt}{space 10}ChangeSale3 {c |}{col 23}{res}{space 2}-.3933175{col 35}{space 2} .1323756{col 46}{space 1}   -2.97{col 55}{space 3}0.003{col 63}{space 4}-.6535544{col 76}{space 3}-.1330806
+{txt}{space 12}Leverage3 {c |}{col 23}{res}{space 2}-.2076397{col 35}{space 2} .0878889{col 46}{space 1}   -2.36{col 55}{space 3}0.019{col 63}{space 4}-.3804202{col 76}{space 3}-.0348592
+{txt}{space 16}Cash3 {c |}{col 23}{res}{space 2}-.1259702{col 35}{space 2} .1123394{col 46}{space 1}   -1.12{col 55}{space 3}0.263{col 63}{space 4} -.346818{col 76}{space 3} .0948776
+{txt}{space 15}1.MNE3 {c |}{col 23}{res}{space 2} .0189336{col 35}{space 2} .0195817{col 46}{space 1}    0.97{col 55}{space 3}0.334{col 63}{space 4}-.0195621{col 76}{space 3} .0574293
+{txt}{space 15}1.NOL3 {c |}{col 23}{res}{space 2} .0196109{col 35}{space 2} .0219598{col 46}{space 1}    0.89{col 55}{space 3}0.372{col 63}{space 4}-.0235597{col 76}{space 3} .0627815
+{txt}{space 9}Intangibles3 {c |}{col 23}{res}{space 2} .0725752{col 35}{space 2} .0647843{col 46}{space 1}    1.12{col 55}{space 3}0.263{col 63}{space 4}-.0547842{col 76}{space 3} .1999345
+{txt}{space 17}PPE3 {c |}{col 23}{res}{space 2} .0897401{col 35}{space 2} .0587475{col 46}{space 1}    1.53{col 55}{space 3}0.127{col 63}{space 4}-.0257515{col 76}{space 3} .2052318
+{txt}{space 16}size3 {c |}{col 23}{res}{space 2}-.0093956{col 35}{space 2} .0057487{col 46}{space 1}   -1.63{col 55}{space 3}0.103{col 63}{space 4}-.0206969{col 76}{space 3} .0019057
+{txt}{space 2}1.purpose_wholesale {c |}{col 23}{res}{space 2} .0086923{col 35}{space 2} .0277052{col 46}{space 1}    0.31{col 55}{space 3}0.754{col 63}{space 4}-.0457733{col 76}{space 3} .0631578
+{txt}{space 4}1.purpose_develop {c |}{col 23}{res}{space 2}-.0152055{col 35}{space 2} .0133556{col 46}{space 1}   -1.14{col 55}{space 3}0.256{col 63}{space 4}-.0414613{col 76}{space 3} .0110502
+{txt}{space 4}1.purpose_license {c |}{col 23}{res}{space 2}-.0037194{col 35}{space 2} .0190043{col 46}{space 1}   -0.20{col 55}{space 3}0.845{col 63}{space 4}  -.04108{col 76}{space 3} .0336412
+{txt}{space 4}1.purpose_service {c |}{col 23}{res}{space 2}-.0183791{col 35}{space 2} .0180945{col 46}{space 1}   -1.02{col 55}{space 3}0.310{col 63}{space 4}-.0539511{col 76}{space 3} .0171929
+{txt}{space 2}1.purpose_marketing {c |}{col 23}{res}{space 2}-.0019322{col 35}{space 2} .0201926{col 46}{space 1}   -0.10{col 55}{space 3}0.924{col 63}{space 4}-.0416288{col 76}{space 3} .0377644
+{txt}{space 5}1.purpose_supply {c |}{col 23}{res}{space 2}-.0211951{col 35}{space 2} .0315912{col 46}{space 1}   -0.67{col 55}{space 3}0.503{col 63}{space 4}-.0833001{col 76}{space 3} .0409099
+{txt}1.purpose_manufacture {c |}{col 23}{res}{space 2} .0125931{col 35}{space 2} .0208341{col 46}{space 1}    0.60{col 55}{space 3}0.546{col 63}{space 4}-.0283647{col 76}{space 3} .0535508
+{txt}{space 16}_cons {c |}{col 23}{res}{space 2} .4841161{col 35}{space 2} .0744967{col 46}{space 1}    6.50{col 55}{space 3}0.000{col 63}{space 4} .3376632{col 76}{space 3}  .630569
+{txt}{hline 22}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{txt}Absorbed degrees of freedom:
+{res}{col 1}{text}{hline 13}{c TT}{hline 12}{hline 12}{hline 14}{hline 1}{c TRC}
+{col 1}{text} Absorbed FE{col 14}{c |} Categories{col 27} - Redundant{col 39}  = Num. Coefs{col 54}{c |}
+{res}{col 1}{text}{hline 13}{c +}{hline 12}{hline 12}{hline 14}{hline 1}{c RT}
+{col 1}{text}         IND{col 14}{c |}{space 1}       12{col 27}{space 1}        0{col 39}{result}{space 1}       12{col 53}{text} {col 54}{c |}
+{res}{col 1}{text}        YEAR{col 14}{c |}{space 1}       20{col 27}{space 1}        1{col 39}{result}{space 1}       19{col 53}{text} {col 54}{c |}
+{res}{col 1}{text}{hline 13}{c BT}{hline 12}{hline 12}{hline 14}{hline 1}{c BRC}
+{res}{com}.         reghdfe DELTA_CASH_ETR3 i.hightolow $PARTNERlist $FIRMlist $NETWORKlist, absorb(IND YEAR) vce(cluster CUSIPNUM)   
+{res}{txt}({browse "http://scorreia.com/research/hdfe.pdf":MWFE estimator} converged in 6 iterations)
+{res}
+{txt}HDFE Linear regression{col 51}Number of obs{col 67}= {res}       828
+{txt}Absorbing 2 HDFE groups{col 51}F({res}  23{txt},{res}    401{txt}){col 67}= {res}      1.70
+{txt}Statistics robust to heteroskedasticity{col 51}Prob > F{col 67}= {res}    0.0238
+{txt}{col 51}R-squared{col 67}= {res}    0.1773
+{txt}{col 51}Adj R-squared{col 67}= {res}    0.1210
+{txt}{col 51}Within R-sq.{col 67}= {res}    0.1273
+{txt}{col 1}Number of clusters ({res}CUSIPNUM{txt}) {col 30}= {res}       402{txt}{col 51}Root MSE{col 67}= {res}    0.7301
+
+{txt}{ralign 87:(Std. Err. adjusted for {res:402} clusters in CUSIPNUM)}
+{hline 22}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 23}{c |}{col 35}    Robust
+{col 1}      DELTA_CASH_ETR3{col 23}{c |}      Coef.{col 35}   Std. Err.{col 47}      t{col 55}   P>|t|{col 63}     [95% Con{col 76}f. Interval]
+{hline 22}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 10}1.hightolow {c |}{col 23}{res}{space 2}-.1334207{col 35}{space 2} .0529558{col 46}{space 1}   -2.52{col 55}{space 3}0.012{col 63}{space 4}-.2375264{col 76}{space 3} -.029315
+{txt}{space 4}1.PARTSAMEAUDITOR {c |}{col 23}{res}{space 2} .0388921{col 35}{space 2} .0593865{col 46}{space 1}    0.65{col 55}{space 3}0.513{col 63}{space 4}-.0778557{col 76}{space 3} .1556398
+{txt}{space 12}PROXIMITY {c |}{col 23}{res}{space 2}-.2317211{col 35}{space 2} .1671144{col 46}{space 1}   -1.39{col 55}{space 3}0.166{col 63}{space 4}-.5602509{col 76}{space 3} .0968087
+{txt}{space 11}ebitda_at3 {c |}{col 23}{res}{space 2}-1.880595{col 35}{space 2} .6031961{col 46}{space 1}   -3.12{col 55}{space 3}0.002{col 63}{space 4}-3.066416{col 76}{space 3}-.6947731
+{txt}{space 14}RnDExp3 {c |}{col 23}{res}{space 2} 1.041954{col 35}{space 2}  .774712{col 46}{space 1}    1.34{col 55}{space 3}0.179{col 63}{space 4}-.4810504{col 76}{space 3} 2.564958
+{txt}{space 15}AdExp3 {c |}{col 23}{res}{space 2}-.3680462{col 35}{space 2} 1.139643{col 46}{space 1}   -0.32{col 55}{space 3}0.747{col 63}{space 4}-2.608467{col 76}{space 3} 1.872375
+{txt}{space 17}SGA3 {c |}{col 23}{res}{space 2} .2464762{col 35}{space 2} .2882259{col 46}{space 1}    0.86{col 55}{space 3}0.393{col 63}{space 4}-.3201464{col 76}{space 3} .8130988
+{txt}{space 15}CapEx3 {c |}{col 23}{res}{space 2} 1.046719{col 35}{space 2} .8716603{col 46}{space 1}    1.20{col 55}{space 3}0.231{col 63}{space 4} -.666876{col 76}{space 3} 2.760314
+{txt}{space 10}ChangeSale3 {c |}{col 23}{res}{space 2}-1.721744{col 35}{space 2} .5077893{col 46}{space 1}   -3.39{col 55}{space 3}0.001{col 63}{space 4}-2.720005{col 76}{space 3}-.7234821
+{txt}{space 12}Leverage3 {c |}{col 23}{res}{space 2}-.6755649{col 35}{space 2} .2969427{col 46}{space 1}   -2.28{col 55}{space 3}0.023{col 63}{space 4}-1.259324{col 76}{space 3} -.091806
+{txt}{space 16}Cash3 {c |}{col 23}{res}{space 2}-.8486165{col 35}{space 2} .4334361{col 46}{space 1}   -1.96{col 55}{space 3}0.051{col 63}{space 4}-1.700707{col 76}{space 3} .0034745
+{txt}{space 15}1.MNE3 {c |}{col 23}{res}{space 2} .0967301{col 35}{space 2} .0804294{col 46}{space 1}    1.20{col 55}{space 3}0.230{col 63}{space 4}-.0613857{col 76}{space 3}  .254846
+{txt}{space 15}1.NOL3 {c |}{col 23}{res}{space 2} .0229318{col 35}{space 2} .0851755{col 46}{space 1}    0.27{col 55}{space 3}0.788{col 63}{space 4}-.1445145{col 76}{space 3} .1903781
+{txt}{space 9}Intangibles3 {c |}{col 23}{res}{space 2} .3084865{col 35}{space 2} .2288206{col 46}{space 1}    1.35{col 55}{space 3}0.178{col 63}{space 4}-.1413513{col 76}{space 3} .7583243
+{txt}{space 17}PPE3 {c |}{col 23}{res}{space 2}  .296044{col 35}{space 2} .1841514{col 46}{space 1}    1.61{col 55}{space 3}0.109{col 63}{space 4}-.0659788{col 76}{space 3} .6580668
+{txt}{space 16}size3 {c |}{col 23}{res}{space 2}-.0088736{col 35}{space 2} .0189699{col 46}{space 1}   -0.47{col 55}{space 3}0.640{col 63}{space 4}-.0461665{col 76}{space 3} .0284192
+{txt}{space 2}1.purpose_wholesale {c |}{col 23}{res}{space 2} .0136688{col 35}{space 2} .1247586{col 46}{space 1}    0.11{col 55}{space 3}0.913{col 63}{space 4}-.2315938{col 76}{space 3} .2589315
+{txt}{space 4}1.purpose_develop {c |}{col 23}{res}{space 2} -.097263{col 35}{space 2} .0548327{col 46}{space 1}   -1.77{col 55}{space 3}0.077{col 63}{space 4}-.2050585{col 76}{space 3} .0105325
+{txt}{space 4}1.purpose_license {c |}{col 23}{res}{space 2} .0258954{col 35}{space 2} .0792093{col 46}{space 1}    0.33{col 55}{space 3}0.744{col 63}{space 4}-.1298221{col 76}{space 3} .1816128
+{txt}{space 4}1.purpose_service {c |}{col 23}{res}{space 2}-.0325576{col 35}{space 2} .0687854{col 46}{space 1}   -0.47{col 55}{space 3}0.636{col 63}{space 4}-.1677826{col 76}{space 3} .1026674
+{txt}{space 2}1.purpose_marketing {c |}{col 23}{res}{space 2} .0623625{col 35}{space 2} .1106865{col 46}{space 1}    0.56{col 55}{space 3}0.573{col 63}{space 4}-.1552358{col 76}{space 3} .2799608
+{txt}{space 5}1.purpose_supply {c |}{col 23}{res}{space 2}-.0785031{col 35}{space 2} .1135941{col 46}{space 1}   -0.69{col 55}{space 3}0.490{col 63}{space 4}-.3018175{col 76}{space 3} .1448113
+{txt}1.purpose_manufacture {c |}{col 23}{res}{space 2}-.0294629{col 35}{space 2} .0846707{col 46}{space 1}   -0.35{col 55}{space 3}0.728{col 63}{space 4}-.1959168{col 76}{space 3}  .136991
+{txt}{space 16}_cons {c |}{col 23}{res}{space 2} 1.346928{col 35}{space 2} .2603511{col 46}{space 1}    5.17{col 55}{space 3}0.000{col 63}{space 4} .8351047{col 76}{space 3} 1.858752
+{txt}{hline 22}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{txt}Absorbed degrees of freedom:
+{res}{col 1}{text}{hline 13}{c TT}{hline 12}{hline 12}{hline 14}{hline 1}{c TRC}
+{col 1}{text} Absorbed FE{col 14}{c |} Categories{col 27} - Redundant{col 39}  = Num. Coefs{col 54}{c |}
+{res}{col 1}{text}{hline 13}{c +}{hline 12}{hline 12}{hline 14}{hline 1}{c RT}
+{col 1}{text}         IND{col 14}{c |}{space 1}       12{col 27}{space 1}        0{col 39}{result}{space 1}       12{col 53}{text} {col 54}{c |}
+{res}{col 1}{text}        YEAR{col 14}{c |}{space 1}       20{col 27}{space 1}        1{col 39}{result}{space 1}       19{col 53}{text} {col 54}{c |}
+{res}{col 1}{text}{hline 13}{c BT}{hline 12}{hline 12}{hline 14}{hline 1}{c BRC}
+{res}{com}.         
+.         *Table OS 2
+.         reghdfe CASH_ETR1 i.TREATED##i.POST, absorb(DIDYEAR) vce(robust) 
+{res}{txt}note: {res}1bn.POST{txt} is probably collinear with the fixed effects (all partialled-out values are close to zero; tol = 1.0e-09)
+{txt}({browse "http://scorreia.com/research/hdfe.pdf":MWFE estimator} converged in 1 iterations)
+{res}{txt}note: 1.POST omitted because of collinearity
+{res}
+{txt}HDFE Linear regression{col 51}Number of obs{col 67}= {res}     1,529
+{txt}Absorbing 1 HDFE group{col 51}F({res}   2{txt},{res}   1519{txt}){col 67}= {res}      1.63
+{txt}{col 51}Prob > F{col 67}= {res}    0.1968
+{txt}{col 51}R-squared{col 67}= {res}    0.0058
+{txt}{col 51}Adj R-squared{col 67}= {res}   -0.0001
+{txt}{col 51}Within R-sq.{col 67}= {res}    0.0021
+{txt}{col 51}Root MSE{col 67}= {res}    0.1977
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |}{col 26}    Robust
+{col 1}   CASH_ETR1{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 3}1.TREATED {c |}{col 14}{res}{space 2} .0105751{col 26}{space 2} .0162314{col 37}{space 1}    0.65{col 46}{space 3}0.515{col 54}{space 4}-.0212631{col 67}{space 3} .0424134
+{txt}{space 6}1.POST {c |}{col 14}{res}{space 2}        0{col 26}{txt}  (omitted)
+{space 12} {c |}
+TREATED#POST {c |}
+{space 8}1 1  {c |}{col 14}{res}{space 2}-.0381798{col 26}{space 2} .0230802{col 37}{space 1}   -1.65{col 46}{space 3}0.098{col 54}{space 4}-.0834522{col 67}{space 3} .0070925
+{txt}{space 12} {c |}
+{space 7}_cons {c |}{col 14}{res}{space 2} .2901136{col 26}{space 2} .0057924{col 37}{space 1}   50.09{col 46}{space 3}0.000{col 54}{space 4} .2787518{col 67}{space 3} .3014755
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{txt}Absorbed degrees of freedom:
+{res}{col 1}{text}{hline 13}{c TT}{hline 12}{hline 12}{hline 14}{hline 1}{c TRC}
+{col 1}{text} Absorbed FE{col 14}{c |} Categories{col 27} - Redundant{col 39}  = Num. Coefs{col 54}{c |}
+{res}{col 1}{text}{hline 13}{c +}{hline 12}{hline 12}{hline 14}{hline 1}{c RT}
+{col 1}{text}     DIDYEAR{col 14}{c |}{space 1}        8{col 27}{space 1}        0{col 39}{result}{space 1}        8{col 53}{text} {col 54}{c |}
+{res}{col 1}{text}{hline 13}{c BT}{hline 12}{hline 12}{hline 14}{hline 1}{c BRC}
+{res}{com}.         
+.         *Table OS 3
+.         reghdfe CTD1 i.TREATED_EBAL##i.POST $FIRMlistannual [pweight = _webal], absorb(IND YEAR DIDYEAR) vce(cluster CUSIPNUM) 
+{res}{txt}note: {res}1bn.POST{txt} is probably collinear with the fixed effects (all partialled-out values are close to zero; tol = 1.0e-09)
+{txt}({browse "http://scorreia.com/research/hdfe.pdf":MWFE estimator} converged in 8 iterations)
+{res}{txt}note: 1.POST omitted because of collinearity
+{res}
+{txt}HDFE Linear regression{col 51}Number of obs{col 67}= {res}     1,623
+{txt}Absorbing 3 HDFE groups{col 51}F({res}  15{txt},{res}    268{txt}){col 67}= {res}      7.04
+{txt}Statistics robust to heteroskedasticity{col 51}Prob > F{col 67}= {res}    0.0000
+{txt}{col 51}R-squared{col 67}= {res}    0.3635
+{txt}{col 51}Adj R-squared{col 67}= {res}    0.3416
+{txt}{col 51}Within R-sq.{col 67}= {res}    0.3013
+{txt}{col 1}Number of clusters ({res}CUSIPNUM{txt}) {col 30}= {res}       269{txt}{col 51}Root MSE{col 67}= {res}    0.0198
+
+{txt}{ralign 83:(Std. Err. adjusted for {res:269} clusters in CUSIPNUM)}
+{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 19}{c |}{col 31}    Robust
+{col 1}             CTD1{col 19}{c |}      Coef.{col 31}   Std. Err.{col 43}      t{col 51}   P>|t|{col 59}     [95% Con{col 72}f. Interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 3}1.TREATED_EBAL {c |}{col 19}{res}{space 2}  .004687{col 31}{space 2}  .002531{col 42}{space 1}    1.85{col 51}{space 3}0.065{col 59}{space 4}-.0002961{col 72}{space 3} .0096702
+{txt}{space 11}1.POST {c |}{col 19}{res}{space 2}        0{col 31}{txt}  (omitted)
+{space 17} {c |}
+TREATED_EBAL#POST {c |}
+{space 13}1 1  {c |}{col 19}{res}{space 2}-.0086071{col 31}{space 2}  .003042{col 42}{space 1}   -2.83{col 51}{space 3}0.005{col 59}{space 4}-.0145964{col 72}{space 3}-.0026178
+{txt}{space 17} {c |}
+{space 8}ebitda_at {c |}{col 19}{res}{space 2}-.1429393{col 31}{space 2} .0213924{col 42}{space 1}   -6.68{col 51}{space 3}0.000{col 59}{space 4}-.1850578{col 72}{space 3}-.1008209
+{txt}{space 11}RnDExp {c |}{col 19}{res}{space 2} .0289384{col 31}{space 2} .0125043{col 42}{space 1}    2.31{col 51}{space 3}0.021{col 59}{space 4} .0043192{col 72}{space 3} .0535576
+{txt}{space 12}AdExp {c |}{col 19}{res}{space 2} .0768459{col 31}{space 2} .0326351{col 42}{space 1}    2.35{col 51}{space 3}0.019{col 59}{space 4}  .012592{col 72}{space 3} .1410998
+{txt}{space 14}SGA {c |}{col 19}{res}{space 2} .0024481{col 31}{space 2} .0060639{col 42}{space 1}    0.40{col 51}{space 3}0.687{col 59}{space 4}-.0094907{col 72}{space 3}  .014387
+{txt}{space 12}CapEx {c |}{col 19}{res}{space 2} .0122124{col 31}{space 2} .0112072{col 42}{space 1}    1.09{col 51}{space 3}0.277{col 59}{space 4} -.009853{col 72}{space 3} .0342778
+{txt}{space 7}ChangeSale {c |}{col 19}{res}{space 2}-.0044089{col 31}{space 2} .0031394{col 42}{space 1}   -1.40{col 51}{space 3}0.161{col 59}{space 4}-.0105899{col 72}{space 3} .0017721
+{txt}{space 9}Leverage {c |}{col 19}{res}{space 2}-.0059048{col 31}{space 2} .0064499{col 42}{space 1}   -0.92{col 51}{space 3}0.361{col 59}{space 4}-.0186037{col 72}{space 3}  .006794
+{txt}{space 13}Cash {c |}{col 19}{res}{space 2}-.0202915{col 31}{space 2} .0073006{col 42}{space 1}   -2.78{col 51}{space 3}0.006{col 59}{space 4}-.0346654{col 72}{space 3}-.0059177
+{txt}{space 12}1.MNE {c |}{col 19}{res}{space 2}-.0025397{col 31}{space 2} .0015663{col 42}{space 1}   -1.62{col 51}{space 3}0.106{col 59}{space 4}-.0056235{col 72}{space 3} .0005442
+{txt}{space 12}1.NOL {c |}{col 19}{res}{space 2} .0014659{col 31}{space 2} .0015398{col 42}{space 1}    0.95{col 51}{space 3}0.342{col 59}{space 4}-.0015657{col 72}{space 3} .0044975
+{txt}{space 6}Intangibles {c |}{col 19}{res}{space 2} .0061815{col 31}{space 2} .0061059{col 42}{space 1}    1.01{col 51}{space 3}0.312{col 59}{space 4}-.0058402{col 72}{space 3} .0182032
+{txt}{space 14}PPE {c |}{col 19}{res}{space 2} .0075176{col 31}{space 2} .0039871{col 42}{space 1}    1.89{col 51}{space 3}0.060{col 59}{space 4}-.0003323{col 72}{space 3} .0153676
+{txt}{space 13}size {c |}{col 19}{res}{space 2}-.0001713{col 31}{space 2} .0004758{col 42}{space 1}   -0.36{col 51}{space 3}0.719{col 59}{space 4}-.0011081{col 72}{space 3} .0007656
+{txt}{space 12}_cons {c |}{col 19}{res}{space 2} .0127042{col 31}{space 2} .0056614{col 42}{space 1}    2.24{col 51}{space 3}0.026{col 59}{space 4} .0015576{col 72}{space 3} .0238508
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{txt}Absorbed degrees of freedom:
+{res}{col 1}{text}{hline 13}{c TT}{hline 12}{hline 12}{hline 14}{hline 1}{c TRC}
+{col 1}{text} Absorbed FE{col 14}{c |} Categories{col 27} - Redundant{col 39}  = Num. Coefs{col 54}{c |}
+{res}{col 1}{text}{hline 13}{c +}{hline 12}{hline 12}{hline 14}{hline 1}{c RT}
+{col 1}{text}         IND{col 14}{c |}{space 1}       11{col 27}{space 1}        0{col 39}{result}{space 1}       11{col 53}{text} {col 54}{c |}
+{res}{col 1}{text}        YEAR{col 14}{c |}{space 1}       23{col 27}{space 1}        1{col 39}{result}{space 1}       22{col 53}{text} {col 54}{c |}
+{res}{col 1}{text}     DIDYEAR{col 14}{c |}{space 1}        8{col 27}{space 1}        1{col 39}{result}{space 1}        7{col 53}{text}?{col 54}{c |}
+{res}{col 1}{text}{hline 13}{c BT}{hline 12}{hline 12}{hline 14}{hline 1}{c BRC}
+? = number of redundant parameters may be higher
+{res}{com}.         
+.         *Table OS 4
+.         reghdfe ChangeEBITDA3 i.hightolow $NETWORKlist $PARTNERlist $FIRMlistnoebitda, absorb(IND YEAR) vce(cluster CUSIPNUM) 
+{res}{txt}({browse "http://scorreia.com/research/hdfe.pdf":MWFE estimator} converged in 6 iterations)
+{res}
+{txt}HDFE Linear regression{col 51}Number of obs{col 67}= {res}       828
+{txt}Absorbing 2 HDFE groups{col 51}F({res}  22{txt},{res}    401{txt}){col 67}= {res}      4.33
+{txt}Statistics robust to heteroskedasticity{col 51}Prob > F{col 67}= {res}    0.0000
+{txt}{col 51}R-squared{col 67}= {res}    0.3331
+{txt}{col 51}Adj R-squared{col 67}= {res}    0.2884
+{txt}{col 51}Within R-sq.{col 67}= {res}    0.2886
+{txt}{col 1}Number of clusters ({res}CUSIPNUM{txt}) {col 30}= {res}       402{txt}{col 51}Root MSE{col 67}= {res}    0.1377
+
+{txt}{ralign 87:(Std. Err. adjusted for {res:402} clusters in CUSIPNUM)}
+{hline 22}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 23}{c |}{col 35}    Robust
+{col 1}        ChangeEBITDA3{col 23}{c |}      Coef.{col 35}   Std. Err.{col 47}      t{col 55}   P>|t|{col 63}     [95% Con{col 76}f. Interval]
+{hline 22}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 10}1.hightolow {c |}{col 23}{res}{space 2} .0007211{col 35}{space 2} .0112234{col 46}{space 1}    0.06{col 55}{space 3}0.949{col 63}{space 4} -.021343{col 76}{space 3} .0227852
+{txt}{space 2}1.purpose_wholesale {c |}{col 23}{res}{space 2}-.0491762{col 35}{space 2} .0215744{col 46}{space 1}   -2.28{col 55}{space 3}0.023{col 63}{space 4}-.0915893{col 76}{space 3}-.0067631
+{txt}{space 4}1.purpose_develop {c |}{col 23}{res}{space 2} -.006549{col 35}{space 2} .0134228{col 46}{space 1}   -0.49{col 55}{space 3}0.626{col 63}{space 4}-.0329368{col 76}{space 3} .0198389
+{txt}{space 4}1.purpose_license {c |}{col 23}{res}{space 2}-.0073701{col 35}{space 2} .0183424{col 46}{space 1}   -0.40{col 55}{space 3}0.688{col 63}{space 4}-.0434295{col 76}{space 3} .0286892
+{txt}{space 4}1.purpose_service {c |}{col 23}{res}{space 2} .0027696{col 35}{space 2} .0119405{col 46}{space 1}    0.23{col 55}{space 3}0.817{col 63}{space 4}-.0207042{col 76}{space 3} .0262433
+{txt}{space 2}1.purpose_marketing {c |}{col 23}{res}{space 2}-.0006008{col 35}{space 2} .0137352{col 46}{space 1}   -0.04{col 55}{space 3}0.965{col 63}{space 4}-.0276029{col 76}{space 3} .0264012
+{txt}{space 5}1.purpose_supply {c |}{col 23}{res}{space 2} .0031277{col 35}{space 2} .0177052{col 46}{space 1}    0.18{col 55}{space 3}0.860{col 63}{space 4}-.0316789{col 76}{space 3} .0379343
+{txt}1.purpose_manufacture {c |}{col 23}{res}{space 2} .0050301{col 35}{space 2}  .016612{col 46}{space 1}    0.30{col 55}{space 3}0.762{col 63}{space 4}-.0276274{col 76}{space 3} .0376876
+{txt}{space 4}1.PARTSAMEAUDITOR {c |}{col 23}{res}{space 2}-.0029747{col 35}{space 2} .0112378{col 46}{space 1}   -0.26{col 55}{space 3}0.791{col 63}{space 4} -.025067{col 76}{space 3} .0191176
+{txt}{space 12}PROXIMITY {c |}{col 23}{res}{space 2}-.0354314{col 35}{space 2}  .029787{col 46}{space 1}   -1.19{col 55}{space 3}0.235{col 63}{space 4}-.0939897{col 76}{space 3} .0231268
+{txt}{space 14}RnDExp3 {c |}{col 23}{res}{space 2}  -.24698{col 35}{space 2} .1514786{col 46}{space 1}   -1.63{col 55}{space 3}0.104{col 63}{space 4}-.5447715{col 76}{space 3} .0508115
+{txt}{space 15}AdExp3 {c |}{col 23}{res}{space 2} -.306187{col 35}{space 2} .2324891{col 46}{space 1}   -1.32{col 55}{space 3}0.189{col 63}{space 4}-.7632367{col 76}{space 3} .1508626
+{txt}{space 17}SGA3 {c |}{col 23}{res}{space 2} .0877512{col 35}{space 2} .0531235{col 46}{space 1}    1.65{col 55}{space 3}0.099{col 63}{space 4}-.0166843{col 76}{space 3} .1921866
+{txt}{space 15}CapEx3 {c |}{col 23}{res}{space 2}-.2145781{col 35}{space 2} .1343224{col 46}{space 1}   -1.60{col 55}{space 3}0.111{col 63}{space 4}-.4786422{col 76}{space 3}  .049486
+{txt}{space 10}ChangeSale3 {c |}{col 23}{res}{space 2} .8982973{col 35}{space 2}  .215771{col 46}{space 1}    4.16{col 55}{space 3}0.000{col 63}{space 4} .4741136{col 76}{space 3} 1.322481
+{txt}{space 12}Leverage3 {c |}{col 23}{res}{space 2} .0026418{col 35}{space 2} .0534266{col 46}{space 1}    0.05{col 55}{space 3}0.961{col 63}{space 4}-.1023894{col 76}{space 3} .1076729
+{txt}{space 16}Cash3 {c |}{col 23}{res}{space 2} .1007876{col 35}{space 2} .0783243{col 46}{space 1}    1.29{col 55}{space 3}0.199{col 63}{space 4}  -.05319{col 76}{space 3} .2547652
+{txt}{space 15}1.MNE3 {c |}{col 23}{res}{space 2} .0378887{col 35}{space 2} .0221813{col 46}{space 1}    1.71{col 55}{space 3}0.088{col 63}{space 4}-.0057174{col 76}{space 3} .0814949
+{txt}{space 15}1.NOL3 {c |}{col 23}{res}{space 2} -.019022{col 35}{space 2} .0144454{col 46}{space 1}   -1.32{col 55}{space 3}0.189{col 63}{space 4}-.0474202{col 76}{space 3} .0093761
+{txt}{space 9}Intangibles3 {c |}{col 23}{res}{space 2} .0055625{col 35}{space 2} .0463217{col 46}{space 1}    0.12{col 55}{space 3}0.904{col 63}{space 4}-.0855012{col 76}{space 3} .0966263
+{txt}{space 17}PPE3 {c |}{col 23}{res}{space 2} .0141388{col 35}{space 2} .0272533{col 46}{space 1}    0.52{col 55}{space 3}0.604{col 63}{space 4}-.0394385{col 76}{space 3} .0677161
+{txt}{space 16}size3 {c |}{col 23}{res}{space 2}-.0023055{col 35}{space 2} .0045858{col 46}{space 1}   -0.50{col 55}{space 3}0.615{col 63}{space 4}-.0113207{col 76}{space 3} .0067097
+{txt}{space 16}_cons {c |}{col 23}{res}{space 2} .0166137{col 35}{space 2} .0650638{col 46}{space 1}    0.26{col 55}{space 3}0.799{col 63}{space 4} -.111295{col 76}{space 3} .1445225
+{txt}{hline 22}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{txt}Absorbed degrees of freedom:
+{res}{col 1}{text}{hline 13}{c TT}{hline 12}{hline 12}{hline 14}{hline 1}{c TRC}
+{col 1}{text} Absorbed FE{col 14}{c |} Categories{col 27} - Redundant{col 39}  = Num. Coefs{col 54}{c |}
+{res}{col 1}{text}{hline 13}{c +}{hline 12}{hline 12}{hline 14}{hline 1}{c RT}
+{col 1}{text}         IND{col 14}{c |}{space 1}       12{col 27}{space 1}        0{col 39}{result}{space 1}       12{col 53}{text} {col 54}{c |}
+{res}{col 1}{text}        YEAR{col 14}{c |}{space 1}       20{col 27}{space 1}        1{col 39}{result}{space 1}       19{col 53}{text} {col 54}{c |}
+{res}{col 1}{text}{hline 13}{c BT}{hline 12}{hline 12}{hline 14}{hline 1}{c BRC}
+{res}{com}. 
+.         log close
+{smcl}
+{com}{sf}{ul off}
