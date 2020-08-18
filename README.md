@@ -1,7 +1,7 @@
 # Tax Knowledge Diffusion via Strategic Alliances
 Online Repository for the Research Article "Tax Knowledge Diffusion via Strategic Alliances"
 
-Version: 08/19/2020
+Version: 08/18/2020
 
 Highlights:
 - Strategic alliances serve as channels for tax knowledge diffusion between firms 
