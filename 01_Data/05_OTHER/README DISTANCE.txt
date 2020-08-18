@@ -1,1 +1,0 @@
-Distances between HQs were handcollected using freemaptools.com (distance in miles, as the crow flies) for all networks with high-tax firms in them. 
