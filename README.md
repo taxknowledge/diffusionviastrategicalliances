@@ -9,4 +9,7 @@ Highlights:
 - Effects do not materialize before two years after a network's initiation
 - Textual analyses of deal texts, 10-K filings, and Exhibit 21 corroborate effects
 
-For Code (Stata & R) and Online Supplement see Folder "Data"
+Code (Stata & R)      -->   01_DOFILES
+Data Request Reports  -->   02_DATA_REQUEST_REPORTS
+Figures & Tables      -->   03_FIGURES_TABLES_AS_IN_PAPER
+Online Supplement     -->   04_ONLINE_SUPPLEMENT
